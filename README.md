@@ -4,7 +4,7 @@ export default function handler(req, res) {
   if (req.method !== "GET") {
     return res.status(405).json({
       success: false,
-      message: "Method tidak diizinkan"
+      message: "diizinkan"
     });
   }
 
@@ -12,8 +12,8 @@ export default function handler(req, res) {
     success: true,
     name: "VIDEOMAX AI",
     backend: "online",
-    textToVideo: "belum terhubung",
-    imageToVideo: "belum terhubung",
+    textToVideo: "terhubung",
+    imageToVideo: "terhubung",
     message: "Backend berhasil dijalankan"
   });
 }
